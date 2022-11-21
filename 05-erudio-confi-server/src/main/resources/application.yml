@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: erudio-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DharanCosta/erudio-config-server2
+          default-label: main
+          search-paths:
+            - 'greeting-service'
+#            username:  username repo privado
+#            password: password
+
